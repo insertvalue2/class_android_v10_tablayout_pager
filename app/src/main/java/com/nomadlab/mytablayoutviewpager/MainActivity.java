@@ -16,7 +16,8 @@ import com.google.android.material.tabs.TabLayout;
 *   pager
 *   - 화면 (종이 넘기듯이 화면을 넘겨 주는 역할)
 *   - Adapter 가 필요하다.
-*   TabLayout
+
+*    TabLayout
 *   - tab 을 담당하는 역할
 *
 *   = 보통 같이 작성하지만 따로 따로 만들어도 작동한다.
@@ -37,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("One"));
         tabLayout.addTab(tabLayout.newTab().setText("Two"));
         tabLayout.addTab(tabLayout.newTab().setText("Three"));
-
-
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), TAB_COUNT);
